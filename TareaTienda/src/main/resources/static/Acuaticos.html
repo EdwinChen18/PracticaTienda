@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animal Wiki-Guide</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .navbar {
+                overflow: hidden;
+                background-color: black;
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+
+            .navbar a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            .navbar a:hover {
+                background: #ddd;
+                color: black;
+            }
+
+            .main {
+                padding: 16px;
+                margin-top: 30px;
+                height: 1200px;
+            }
+            body, html {
+                height: 100%;
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .bg-imageM {
+                background-image: url("Images/underwater.jpg");
+                filter: blur(3px);
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: -1;
+            }
+
+            .images-container {
+                max-width: 1920px;
+                max-height: 1500px;
+                margin: 150px auto;
+                display: flex;
+                border: 2px solid #222;
+            }
+
+            .images-container img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all 400ms;
+            }
+
+            .images-container .image {
+                position: relative;
+                overflow: hidden;
+            }
+
+            .images-container .description {
+                position: absolute;
+                bottom: -180px;
+                background: #222;
+                color: #fff;
+                padding: 8px 16px;
+                box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.4);
+                opacity: 0;
+                transition: all 400ms;
+            }
+
+            .images-container .description h2 {
+                color: #50ebff;
+            }
+
+            .images-container .image:hover .description {
+                opacity: 1;
+                bottom: 0;
+            }
+
+            .images-container .image:hover img {
+                transform: scale(1.1);
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="navbar">
+            <a href="Index.html">Home</a>
+            <a href="Mamiferos.html">Mamiferos</a>
+            <a href="Acuaticos.html">Acuaticos</a>
+            <a href="Insectos.html">Insectos</a>
+        </div>
+        <div class="bg-imageM"></div>
+        <div class="images-container">
+            <div class="image">
+                <a href="Tiburon.html">
+                    <img src="Images/shark.png" alt="tiburon"/>
+                    Tiburon</a>
+
+                <div class="description">
+                    <h2>Tiburon</h2>
+                    <p>Sharks are a group of elasmobranch fish characterized by a cartilaginous skeleton, five to seven gill slits on the sides of the head, and pectoral fins that are not fused to the head. </p>
+                </div>
+            </div>
+            <div class="image">
+                <a href="Turtle.html">
+                    <img src="Images/turtle.jpg" alt="turtle"/>
+                    Turtle</a>
+
+                <div class="description">
+                    <h2>Turtle</h2>
+                    <p>Sea turtles (superfamily Chelonioidea), sometimes called marine turtles,are reptiles of the order Testudines and of the suborder Cryptodira. The seven existing species of sea turtles are the flatback, green, hawksbill, leatherback, loggerhead, Kemp's ridley, and olive ridley sea turtles. All of the seven species listed above, except for the flatback, are present in US waters, and are listed as endangered and/or threatened under the Endangered Species Act.The flatback itself exists in the waters of Australia, Papua New Guinea and Indonesia.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

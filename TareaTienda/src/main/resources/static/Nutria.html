@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animal Wiki-Guide</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .navbar {
+                overflow: hidden;
+                background-color: black;
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+
+            .navbar a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            .navbar a:hover {
+                background: #ddd;
+                color: black;
+            }
+
+            .main {
+                padding: 16px;
+                margin-top: 30px;
+                height: 1200px;
+            }
+
+            body, html {
+                height: 100%;
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .bg-imageM {
+                background-image: url("Images/nutriasss.jpg");
+                filter: blur(0px);
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: -1;
+            }
+
+            .section {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 60vh;
+                margin-top: 170px; 
+            }
+
+            .section .content {
+                text-align: center;
+                max-width: 1000px;
+                margin: 0 auto; 
+            }
+
+            .video-container {
+                margin-top: 50px; 
+            }
+    .bullet-points {
+                text-align: left;
+            }
+
+            .bullet-points ul {
+                list-style-type: disc;
+                margin-left: 20px;
+                padding-left: 0;
+            }
+
+            .bullet-points li {
+                margin-bottom: 28px;
+                padding-left: 16px;
+                font-weight: bold;
+                color: wheat;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="bg-imageM"></div>
+        <div class="navbar">
+            <a href="Index.html">Home</a>
+            <a href="Mamiferos.html">Mamiferos</a>
+            <a href="Acuaticos.html">Acuaticos</a>
+            <a href="Insectos.html">Insectos</a>
+        </div>
+
+        <section class="section">
+            <div class="video-container">
+                <video width="1200" height="700" controls autoplay>
+                    <source src="Images/Otter.mp4" type="video/mp4">
+                </video> 
+            </div>
+        </section>
+
+    <section class="section">
+            <div class="content">
+                <h2 style="color: white">Fun Facts</h2>
+                <div class="bullet-points">
+                    <ul>
+                        <li>1. La nutria es un animal carnívoro, pero muchas personas creen erróneamente que se alimenta de plantas y frutas.</li>
+                        
+                        <li>2. La mayoría de las especies de nutria poseen una cola larga y musculosa que les ayuda a navegar a través del agua con gran facilidad. Esta puede representar aproximadamente el 40% de su cuerpo. La nutria marina es la única especie que no tiene músculos en la cola.</li>
+                        
+                        <li>3. Contrario a lo que muchos podrían pensar, las nutrias pasan la mayor parte de su tiempo en la tierra, y no en el agua. Una vez más, la nutria marina es la excepción a esta regla, ya que pasa casi todo su tiempo en el agua.</li>
+                        
+                        <li>5. La Antártida y Australia son los dos únicos lugares donde no podrás encontrarte con nutrias. Aunque pueden vivir en aguas frías, estas criaturas prefieren los hábitats donde el agua es más cálida y la tierra es arenosa.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
